@@ -1,0 +1,5 @@
+툴 이용하지않고 메모장으로 HellWorld출력하기
+
+메모장에 코드입력 - class명.java로 파일저장 -  명령프롬프트 켜고 파일저장된 디렉토리로접근(cd 경로) - 
+dir 입력후 HelloWorld.java 파일확인 - javac HelloWorld.java 입력(컴파일 되면서 Hello.class 생성됨) - dir/w입력후 디렉토리 확인 -
+java HelloWorld 입력( 출력 )
