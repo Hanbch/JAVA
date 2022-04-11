@@ -1,19 +1,16 @@
-1. 아래가 의도하지 않는 결과를 출력한다 이유와
-고치는 방법을 설명하시오.
+1. 아래가 의도하지 않는 결과를 출력한다 이유와 고치는 방법을 설명하시오.
+	int num1 = 3;
+	int num2 = 4;
 
-
-		int num1 = 3;
-		int num2 = 4;
-
-		double result = num1 / num2;
+	double result = num1 / num2;
 		
-		System.out.println(result); //0.0
+	System.out.println(result); //0.0
 
- - 위의 결과 값은 0.0 이다. 이유는 변수 num1,2가 int 로 선언되어있다.
- 그러므로 연산시 결과값이 정수로 나온다. 연산 결과가 0.75이지만 실수부분은 버 리고 정수 0 만 나오게된다. 0이라는 결과값을 double, 실수형 데이터 타입에 담았 기 떄문에 result의값은 0.0이된다. 0.75가 출력이되게 하려면 num1,2를 double   형 으로 선언하거나 연산할때 형변환(casting)을 해준다.  
- ex) double result = (double)num1 / num2;
-      double result = num1 / (double)num2;
-      double result = (double)num1 / (double)num2;
+  - 위의 결과 값은 0.0 이다. 이유는 변수 num1,2가 int 로 선언되어있다.
+    그러므로 연산시 결과값이 정수로 나온다. 연산 결과가 0.75이지만 실수부분은     버 리고 정수 0 만 나오게된다. 0이라는 결과값을 double, 실수형 데이터 타입에     담았 기 떄문에 result의값은 0.0이된다. 0.75가 출력이되게 하려면 num1,2를     double   형 으로 선언하거나 연산할때 형변환(casting)을 해준다.  
+    ex) double result = (double)num1 / num2;
+         double result = num1 / (double)num2;
+         double result = (double)num1 / (double)num2;
 
 2. 상수란 무엇이며 변수와의 차이는?
  - 상수란 변하지 않는 수 이다. 변수는 초기화한뒤 값을 바꿀수있지만. 
