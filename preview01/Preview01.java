@@ -23,7 +23,7 @@ class InterAge {
 	}
 }
 
-public class Work3 {
+public class Preview01 {
 	
 	
 	public static void main(String[] args) {
