@@ -16,7 +16,7 @@ public class CondOp {
 		
 		diff = (num1 > num2) ? (num1 - num2) : (num2 - num1);
 		System.out.println("절댓값: " + diff );
-		
+		 
 	}
 
 }
