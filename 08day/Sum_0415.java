@@ -77,7 +77,6 @@ public class Sum_0415 {
 			System.out.print('\n');
 		}
 		System.out.print('\n');
-		
 	}
 
 }
