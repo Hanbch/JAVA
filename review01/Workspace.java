@@ -65,7 +65,7 @@ public class Workspace {
 			sum += i;
 		}
 		System.out.println(sum);
-		
+		 
 		int sum2 = 0;
 		for(int i=0; i<=100; i++) {
 			if((i%2) == 0) 
