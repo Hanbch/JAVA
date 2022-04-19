@@ -1,0 +1,30 @@
+package chap06;
+
+public class Scope {
+	public static int factorial(int num) {
+		if(num == 1)
+			return 1;
+		else
+			return num*factorial(num - 1);// 함수안에서 자기자신(함수)를 호출하는 함수를 재귀함수라고한다.
+	}
+	
+	public static int factorial2(int num) {
+		int sum =1;
+		for(int i=1; i<=num; i++) {
+			sum *= i;
+		}
+		return sum;
+		
+	}
+	
+	public static void main(String[] args) {
+		//팩토리얼 함수 만들기 
+		
+		int rst = factorial(5);
+		int rst2 = factorial2(5);
+		System.out.println(rst);
+		System.out.println(rst2);
+	}
+	
+	
+}

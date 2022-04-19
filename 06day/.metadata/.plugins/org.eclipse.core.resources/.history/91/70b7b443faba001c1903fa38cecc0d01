@@ -1,0 +1,20 @@
+package chap03;
+
+public class WorkSpace2 {
+
+	public static void main(String[] args) {
+		
+		//세수 80 33 90 중 가장 큰수 구하기
+		int a = 80;
+		int b = 33;
+		int c = 90;
+		
+		int comp = (a > b) ? a : b;
+		int rst = ( comp > c ) ? comp : c;
+		
+		System.out.println(rst);
+		
+		
+	}
+
+}

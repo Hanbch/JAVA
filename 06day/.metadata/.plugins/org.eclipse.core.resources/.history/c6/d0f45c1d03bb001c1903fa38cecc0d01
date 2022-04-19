@@ -1,0 +1,50 @@
+package chap03;
+
+public class WorkSpace2 {
+
+	public static void main(String[] args) {
+		
+		int num = -10;
+		num = (num < 0) ? num : (-num);
+		
+		//세수 80 33 90 중 가장 큰수 구하기
+		
+		// 삼항 연산자로 세값 비교 
+		int a = 80;
+		int b = 33;
+		int c = 90;
+		
+		int comp = (a > b) ? a : b;
+		int rst = ( comp > c ) ? comp : c;
+		
+		System.out.println(rst);
+		
+		// if문으로 세값 비교
+		
+		int max = a;
+		
+		if (b > max) {
+			max = b;
+		}
+		if (c > max) {
+			max = c;
+		}
+		System.out.println(max);
+		
+		if( a > b ) {
+			if( a > c) {
+				System.out.println(a);
+			}else {
+				System.out.println(c);
+			}
+		}else {
+			if(b > c) {
+				System.out.println(b);
+			}else {
+				System.out.println(c);
+			}
+		}
+		
+	}
+
+}

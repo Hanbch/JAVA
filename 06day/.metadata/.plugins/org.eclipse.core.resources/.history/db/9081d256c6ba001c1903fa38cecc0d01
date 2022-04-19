@@ -1,0 +1,52 @@
+package chap03;
+
+public class WorkSpace {
+
+	public static void main(String[] args) {
+		
+		int kor = 80;
+		int math = 80;
+		int eng = 60;
+		
+		int total = kor + math + eng;
+		double avr = total/3;
+		
+		System.out.println("총점 :" + total);
+		System.out.println("평균 :" + avr);
+		
+		if( avr >= 90 ) {
+			System.out.println("�닔");
+		} else if ( avr >= 80 ) {
+			System.out.println("�슦");
+		} else if ( avr >= 70 ) {
+			System.out.println("誘�");
+		} else if ( avr >= 60 ) {
+			System.out.println("�뼇");
+		} else {
+			System.out.println("媛�");
+		}
+		
+		
+		int num = 77;
+		
+		if( (num%3 == 0) || (num%2 == 0) ) {
+			System.out.println(num + "�� 3 �삉�뒗 2�쓽 諛곗닔�엯�땲�떎.");
+		}else {
+			System.out.println(num + "�� 3 �삉�뒗 2�쓽 諛곗닔媛� �븘�떃�땲�떎.");
+		}
+		
+		// 55  媛� ���닔 �씠硫� ���닔 �엯�땲�떎. 吏앹닔 �씠硫� 吏앹닔 �엯�땲�떎. 異쒕젰
+		
+		int num1 = 55;
+		 if( num%2 == 1 ) {
+			 System.out.println(num1 + "���닔 �엯�땲�떎.");
+		 } else {
+			 System.out.println(num1 + "吏앹닔 �엯�땲�떎.");
+		 }
+			
+		
+		
+		
+	}
+
+}

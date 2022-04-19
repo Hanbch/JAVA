@@ -1,0 +1,27 @@
+package chap06;
+
+//class Calculator{
+//	private int num1,num2;
+//	
+//	
+//	
+//}
+
+class Human{
+	int eye = 2;
+	
+	//public void setEye(int eye) {
+	//	this.eye = eye; 
+	//}
+	
+}
+
+public class InstanceTest {
+	
+	public static void main(String[] args) {
+		Human  human = new Human();
+		System.out.println(human.eye);
+		
+	}
+	
+}

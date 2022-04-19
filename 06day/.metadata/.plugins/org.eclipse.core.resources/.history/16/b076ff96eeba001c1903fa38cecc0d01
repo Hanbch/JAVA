@@ -1,0 +1,40 @@
+package chap03;
+
+public class ForWhile {
+
+	public static void main(String[] args) {
+		
+		for( int i = 1; i<10; i++ ) {
+			
+			System.out.println("3 X " + i + "=" + 3 * i);
+			
+		}
+		
+		for( int i = 1; i<10; i++ ) {
+			
+			for( int j = 1; j<10; j++) {
+				
+				System.out.println(i + "X" + j + "=" + i*j);
+			}
+			
+		}
+		
+		//int num = 0;
+//		while(num < 5) {
+//				
+//			System.out.println("I like Java" + num);
+//			num++;
+//			
+//		}
+//		System.out.println(num);
+		
+		//int num2 = 5;
+		
+		//do {
+		//	System.out.println("I like Java " + num2);
+		//	num2++;
+		//}while (num2 < 5);
+		
+	}
+
+}
