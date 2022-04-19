@@ -1,5 +1,5 @@
 package practice01;
-import java.util.Scanner;
+import java.util.Scanner; 
 
 class FarmMachine {
 	//속성 attribute
