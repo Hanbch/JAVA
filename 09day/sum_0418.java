@@ -2,34 +2,34 @@ package chap06;
 
 public class sum_0418 {
 	
-	public static void hiEveryone(int age, double height) {//1. ÀÎÀÚ Àü´ŞÀ» ¹ŞÁö¸¸ ¸®ÅÏ °ªÀÌ ¾ø´Â ÇÔ¼ö »ı¼º
-		System.out.println("Á¦ ³ªÀÌ´Â" + age + "¼¼ÀÔ´Ï´Ù." );
-		System.out.println("Á¦ Å°´Â" + height + "cmÀÔ´Ï´Ù." );
-	}
+	public static void hiEveryone(int age, double height) {//1. ì¸ì ì „ë‹¬ì„ ë°›ì§€ë§Œ ë¦¬í„´ ê°’ì´ ì—†ëŠ” í•¨ìˆ˜ ìƒì„±
+		System.out.println("ì œ ë‚˜ì´ëŠ”" + age + "ì„¸ì…ë‹ˆë‹¤." );
+		System.out.println("ì œ í‚¤ëŠ”" + height + "cmì…ë‹ˆë‹¤." );
+	} 
 	
-	public static void byeEveryone() {//2. ÀÎÀÚ Àü´ŞÀ» ¹ŞÁö¾Ê°í ¸®ÅÏ°ªÀÌ ¾ø´Â ÇÔ¼ö »ı¼º
+	public static void byeEveryone() {//2. ì¸ì ì „ë‹¬ì„ ë°›ì§€ì•Šê³  ë¦¬í„´ê°’ì´ ì—†ëŠ” í•¨ìˆ˜ ìƒì„±
 		System.out.println("bye");
 	}
 	
-	public static int adder(int num1, int num2) {//3.ÀÎÀÚÀü´ŞÀ» ¹Ş°í Á¤¼öÇü ¸®ÅÏ°ªÀ» ¸®ÅÏÇÏ´Â ÇÔ¼ö »ı¼º
+	public static int adder(int num1, int num2) {//3.ì¸ìì „ë‹¬ì„ ë°›ê³  ì •ìˆ˜í˜• ë¦¬í„´ê°’ì„ ë¦¬í„´í•˜ëŠ” í•¨ìˆ˜ ìƒì„±
 		int addRst = num1 + num2;
 		return addRst;
 	}
 	
-	public static double square(double num) {//3.ÀÎÀÚÀü´ŞÀ» ¹Ş°í ½Ç¼öÇü ¸®ÅÏ°ªÀ» ¸®ÅÏÇÏ´Â ÇÔ¼ö »ı¼º
+	public static double square(double num) {//3.ì¸ìì „ë‹¬ì„ ë°›ê³  ì‹¤ìˆ˜í˜• ë¦¬í„´ê°’ì„ ë¦¬í„´í•˜ëŠ” í•¨ìˆ˜ ìƒì„±
 		return num * num;
 
 	}
 	
-	public static void divide(int num1, int num2){//4. void ¿Í return
+	public static void divide(int num1, int num2){//4. void ì™€ return
 		if(num2 == 0) {
-			System.out.println("0À¸·Î´Â ³ª´©±â¸¦ ÇÒ¼ö ¾ø½À´Ï´Ù.");
-			return; // void·Î »ı¼ºµÈ ¸Ş¼­µå¾È¿¡¼­ returnÀ» ¾µ‹š´Â µÚ¿¡ °ªÀÌ ¿Ã¼ö ¾øÀ½. returnÀº ÇÔ¼ö Á¾·áÀÇ ÀÇ¹Ì
+			System.out.println("0ìœ¼ë¡œëŠ” ë‚˜ëˆ„ê¸°ë¥¼ í• ìˆ˜ ì—†ìŠµë‹ˆë‹¤.");
+			return; // voidë¡œ ìƒì„±ëœ ë©”ì„œë“œì•ˆì—ì„œ returnì„ ì“¸Â‹ÂšëŠ” ë’¤ì— ê°’ì´ ì˜¬ìˆ˜ ì—†ìŒ. returnì€ í•¨ìˆ˜ ì¢…ë£Œì˜ ì˜ë¯¸
 		}
 		System.out.println(num1/num2);
 	}
 	
-	public static void starPrint(int num) {// 5.º°Âï±â ÇÔ¼ö »ı¼º
+	public static void starPrint(int num) {// 5.ë³„ì°ê¸° í•¨ìˆ˜ ìƒì„±
 		for(int i=0; i <num; i++) {
 			for(int j=0; j<=i; j++) {
 				System.out.print("*");
@@ -40,30 +40,30 @@ public class sum_0418 {
 		
 	}
 	
-	public static double recArea(double width, double height) { //6. °¡·Î ¼¼·Î¸¦ ¸Å°³º¯¼ö·Î ¹Ş´Â »ç°¢ÇüÀÇ ³ĞÀÌ¸¦ ±¸ÇÏ´Â ¸Ş¼­µå »ı¼º 
+	public static double recArea(double width, double height) { //6. ê°€ë¡œ ì„¸ë¡œë¥¼ ë§¤ê°œë³€ìˆ˜ë¡œ ë°›ëŠ” ì‚¬ê°í˜•ì˜ ë„“ì´ë¥¼ êµ¬í•˜ëŠ” ë©”ì„œë“œ ìƒì„± 
 		return width*height;
 	}
 	
-	public static double cirArea(double radius) { //7. ¹İÁö¸§ÀÇ °ªÀ» ¹Ş¾Æ¼­ ¿øÀÇ ³ĞÀÌ¸¦ ¹İÈ¯ÇÏ´Â ¸Ş¼­µå »ı¼º 
+	public static double cirArea(double radius) { //7. ë°˜ì§€ë¦„ì˜ ê°’ì„ ë°›ì•„ì„œ ì›ì˜ ë„“ì´ë¥¼ ë°˜í™˜í•˜ëŠ” ë©”ì„œë“œ ìƒì„± 
 		final double PI =3.14;
 		return  radius*radius*PI;
 	}
 	
-	public static String scoringMethod(int kor,int math, int eng) { //8.±¹¾î ¿µ¾î ¼öÇĞ ¼ºÀûÀ» ¹Ş¾Æ¼­ ¼ºÀû³»´Â ÇÔ¼ö »ı¼º
+	public static String scoringMethod(int kor,int math, int eng) { //8.êµ­ì–´ ì˜ì–´ ìˆ˜í•™ ì„±ì ì„ ë°›ì•„ì„œ ì„±ì ë‚´ëŠ” í•¨ìˆ˜ ìƒì„±
 		int total =kor + math + eng;
 		double avr = total/3.0;
 		String result;
 		
 		if(avr >= 90) {
-			result ="¼ö";
+			result ="ìˆ˜";
 		}else if(avr >= 80) {
-			result = "¿ì";
+			result = "ìš°";
 		}else if(avr >= 70) {
-			result = "¹Ì";
+			result = "ë¯¸";
 		}else if(avr >= 60) {
-			result = "¾ç";
+			result = "ì–‘";
 		}else {
-			result = "°¡";
+			result = "ê°€";
 		}
 		
 		return result;
@@ -74,18 +74,18 @@ public class sum_0418 {
 
 	public static void main(String[] args) {
 		double myHeight = 175.0;
-		//1. ÀÎÀÚ Àü´ŞÀ» ÇÏÁö¸¸ ¸®ÅÏ °ªÀÌ ¾ø´Â ÇÔ¼ö È£Ãâ
+		//1. ì¸ì ì „ë‹¬ì„ í•˜ì§€ë§Œ ë¦¬í„´ ê°’ì´ ì—†ëŠ” í•¨ìˆ˜ í˜¸ì¶œ
 		System.out.println('\n');
 		
 		hiEveryone(12, 12.5);
 		hiEveryone(13, myHeight);
 		  
-		//2. ÀÎÀÚ Àü´ŞÀ» ÇÏÁö¾Ê°í ¸®ÅÏ°ªÀÌ ¾ø´Â ÇÔ¼ö È£Ãâ
+		//2. ì¸ì ì „ë‹¬ì„ í•˜ì§€ì•Šê³  ë¦¬í„´ê°’ì´ ì—†ëŠ” í•¨ìˆ˜ í˜¸ì¶œ
 		System.out.println('\n');
 		  
 		byeEveryone();
 		
-		//3.ÀÎÀÚÀü´ŞÀ» ÇÏ°í ¸®ÅÏ°ªÀ» ¹Ş´Â ÇÔ¼ö È£Ãâ
+		//3.ì¸ìì „ë‹¬ì„ í•˜ê³  ë¦¬í„´ê°’ì„ ë°›ëŠ” í•¨ìˆ˜ í˜¸ì¶œ
 		System.out.println('\n');
 		
 		int rst = adder(4,5);
@@ -93,33 +93,33 @@ public class sum_0418 {
 		System.out.println(rst);
 		System.out.println(square(3.5));
 		
-		//4. void ¿Í return
+		//4. void ì™€ return
 		System.out.println('\n');
 		
 		divide(4,2);
 		divide(6,2);
 		divide(9,0);
 		
-		//5. ¹®Á¦1
+		//5. ë¬¸ì œ1
 		System.out.println('\n');
 		
 		starPrint(5);
 		
-		// 6. °¡·Î ¼¼·Î¸¦ ¸Å°³º¯¼ö·Î ¹Ş¾Æ¼­ »ç°¢ÇüÀÇ ³ĞÀÌ¸¦ ±¸ÇÏ´Â ¸Ş¼­µå È£Ãâ 
+		// 6. ê°€ë¡œ ì„¸ë¡œë¥¼ ë§¤ê°œë³€ìˆ˜ë¡œ ë°›ì•„ì„œ ì‚¬ê°í˜•ì˜ ë„“ì´ë¥¼ êµ¬í•˜ëŠ” ë©”ì„œë“œ í˜¸ì¶œ 
 		System.out.println('\n');
 		double width = 92.5;
 		double height = 5.8;
 		double result = recArea(width,height);
-		System.out.println("¹Øº¯ÀÌ "+ width + "ÀÌ°í " + "³ôÀÌ°¡ " + height + "ÀÎ »ç°¢ÇüÀÇ ³ĞÀÌ´Â " + result + "ÀÔ´Ï´Ù.");
+		System.out.println("ë°‘ë³€ì´ "+ width + "ì´ê³  " + "ë†’ì´ê°€ " + height + "ì¸ ì‚¬ê°í˜•ì˜ ë„“ì´ëŠ” " + result + "ì…ë‹ˆë‹¤.");
 		
-		// 7. ¹İÁö¸§À» ¹Ş¾Æ¼­ ¿øÀÇ ³ĞÀÌ¸¦ ¸®ÅÏÇÏ´Â ¸Ş¼­µå È£Ãâ
+		// 7. ë°˜ì§€ë¦„ì„ ë°›ì•„ì„œ ì›ì˜ ë„“ì´ë¥¼ ë¦¬í„´í•˜ëŠ” ë©”ì„œë“œ í˜¸ì¶œ
 		System.out.println('\n');
 		
 		double radius = 2.2;
 		double result2 = cirArea(radius);
 		System.out.println(result2);
 		
-		//8.±¹¾î ¿µ¾î ¼öÇĞ ¼ºÀûÀ» ¹Ş¾Æ¼­ ¼ºÀû³»´Â ÇÔ¼ö È£Ãâ
+		//8.êµ­ì–´ ì˜ì–´ ìˆ˜í•™ ì„±ì ì„ ë°›ì•„ì„œ ì„±ì ë‚´ëŠ” í•¨ìˆ˜ í˜¸ì¶œ
 		System.out.println('\n');
 		
 		int kor = 80;
@@ -127,8 +127,8 @@ public class sum_0418 {
 		int eng = 60;
 		
 		String score = scoringMethod(kor, math, eng);
-		System.out.println("´ç½ÅÀÇ ¼ºÀûÀº "+ score + " ÀÔ´Ï´Ù.");
-		System.out.println(scoringMethod(90, 90, 90)+ " ÀÔ´Ï´Ù.");
+		System.out.println("ë‹¹ì‹ ì˜ ì„±ì ì€ "+ score + " ì…ë‹ˆë‹¤.");
+		System.out.println(scoringMethod(90, 90, 90)+ " ì…ë‹ˆë‹¤.");
 		
 		
 	}
