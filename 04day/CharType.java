@@ -73,6 +73,6 @@ public class CharType {
 			
 			System.out.println('A');
 			System.out.println("A" + "A");
-			
+		
 	}
 }
