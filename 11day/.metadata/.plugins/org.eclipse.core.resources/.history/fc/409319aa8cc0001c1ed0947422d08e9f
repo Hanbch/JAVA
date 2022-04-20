@@ -1,0 +1,35 @@
+
+public class sum_0420 {
+	public static int factorial(int num) {// //5.펙토리얼을 구하는 재귀 함수를 만드시오.
+		num = num * factorial(num - 1);
+		return num;
+		
+	}
+	
+	public static void main(String[] args) {
+		//1.변수의 scope 는?
+		// - 변수의 scope란 변수의 유효범위이다.
+		 
+		//2.지역변수?
+		// - 지역변수란 {}안에서만 사용가능한 변수를 말하다.
+		
+		//3.인스턴스 변수란?
+		// - 인스턴스 변수란 class안에서 객체가 생성될떄 만들어지는 변수를 말한다.
+		
+		//4.지역변수와 인스턴스 변수의 차이는?
+		// -  
+		
+		//5.펙토리얼을 구하는 재귀 함수를 만드시오.
+		 System.out.println(factorial(10));
+		 
+		//6.클래스의 구성요소는 무엇인가?
+		//7.클래스와 객체의 차이는 무엇인가?
+		//8.붕어빵 과 붕어빵 틀을 빗대어 객체에 대하여 설명하시오.
+
+
+
+		
+		
+	}
+
+}
