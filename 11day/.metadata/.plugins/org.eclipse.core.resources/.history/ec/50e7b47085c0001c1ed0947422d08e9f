@@ -1,0 +1,29 @@
+package chap08;
+class Circle{
+	int radius;
+	
+	public void setRadius(int radius) {
+		this.radius = radius;
+	}
+	
+	public double getCirArea() {
+		final double PI = 3.14;
+		
+		return radius*radius*PI;
+	}
+}
+
+public class workspace {
+	
+	
+	public static void main(String[] args) {
+		
+		Circle cir = new Circle();
+		Circle cir2 = new Circle();
+		
+		cir.setRadius(10);
+		System.out.println(cir.getCirArea());
+		
+	}
+
+}

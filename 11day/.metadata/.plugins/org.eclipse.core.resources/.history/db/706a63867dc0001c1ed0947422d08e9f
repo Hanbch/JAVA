@@ -1,0 +1,115 @@
+package chap08;
+
+class Human{
+	int eye;
+	
+	public void setEye(int num) {
+		this.eye = num;
+	}
+}
+
+class Grade{
+	int kor=90;
+	int math=70;
+	int eng=80;
+	int total;
+	double avr;
+	
+	public int total(){
+		total = kor + math + eng;
+		return total;
+	}
+	public double avr() {
+		avr = total() /3.0;
+		return avr;
+	}
+	
+	void getGrade() {
+		if( avr() >= 90) {
+			System.out.println("수");
+		}else if (avr() >=80 ) {
+			System.out.println("우");
+		}else if (avr() >=70 ) {
+			System.out.println("미");
+		}else if (avr() >=60 ) {
+			System.out.println("양");
+		}else {
+			System.out.println("가");
+		}
+	}
+	
+}
+
+public class Review {
+	
+	public static int adding(int num) {
+		int sum = 0;
+		for (int i=1; i<=num; i++) {
+			sum += i;
+		}
+		return sum;
+		
+	}
+	
+	public static void makeGooGooDan(int dan) {
+		for(int i=1; i<dan; i++) {
+			System.out.println(dan + "x"+ i + "=" + dan*i);
+		}
+	}
+	
+	public static void printStar(int num) {
+		for(int i=0; i<num; i++) {
+			for(int j=0; j<=i; j++) {
+				System.out.print("*");
+			}
+			System.out.print('\n');
+		}
+		
+		for(int i=0; i<num; i++) {
+			for(int j=0; j<num-i; j++) {
+				System.out.print("*");
+			}
+			System.out.print('\n');
+		}
+	}
+	
+	
+	
+	public static void main(String[] args) {
+		// 하나의 정수를  받아서 해당 1 부터 해당정수 까지의 합을 리턴 하는 함수
+		int rst = adding(10);
+		System.out.println(rst);
+		
+		//하나의 정수를  받아서 해당 정수의 구구단 출력
+		int dan = 9;
+		makeGooGooDan(dan);
+		
+		//"아래를 함수로 짜시오. 5 이면 5층 석탑 6이면 6층 석탑
+		//*
+		//**
+		//***
+		//****
+		//*****
+		int num =5;
+		printStar(num);
+		
+		//"Human eye   변수 선언 후  set  함수 만들어 set   함수에  2를 집어넣고 eye  출력 하시오"
+		
+		Human hm = new Human();
+		hm.setEye(2);
+		System.out.println(hm.eye);
+		
+		Grade gr = new Grade();
+		System.out.println(gr.total);
+		System.out.println(gr.avr);
+		System.out.println(gr.total());
+		System.out.println(gr.avr());
+		//gr.getGrade();
+		
+		//gr.total();
+		System.out.println(gr.total);
+		System.out.println(gr.avr);
+		
+	}
+
+}

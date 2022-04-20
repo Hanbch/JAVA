@@ -1,0 +1,59 @@
+package chap08;
+
+
+
+public class Review {
+	
+	public static int adding(int num) {
+		int sum = 0;
+		for (int i=1; i<=num; i++) {
+			sum += i;
+		}
+		return sum;
+		
+	}
+	
+	public static void makeGooGooDan(int dan) {
+		for(int i=1; i<dan; i++) {
+			System.out.println(dan + "x"+ i + "=" + dan*i);
+		}
+	}
+	
+	public static void printStar(int num) {
+		for(int i=0; i<num; i++) {
+			for(int j=0; j<=i; j++) {
+				System.out.print("*");
+			}
+			System.out.print('\n');
+		}
+		
+		for(int i=0; i<num; i++) {
+			for(int j=0; j<num-i; j++) {
+				System.out.print("*");
+			}
+			System.out.print('\n');
+		}
+	}
+	
+	
+	
+	public static void main(String[] args) {
+		// 하나의 정수를  받아서 해당 1 부터 해당정수 까지의 합을 리턴 하는 함수
+		int rst = adding(10);
+		System.out.println(rst);
+		
+		//하나의 정수를  받아서 해당 정수의 구구단 출력
+		int dan = 9;
+		makeGooGooDan(dan);
+		
+		//"아래를 함수로 짜시오. 5 이면 5층 석탑 6이면 6층 석탑
+		//*
+		//**
+		//***
+		//****
+		//*****
+		int num =5;
+		printStar(num);
+	}
+
+}
