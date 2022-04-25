@@ -22,6 +22,9 @@ public class Example {
 		packag.Circle cir = new packag.Circle();
 		Circle cir2 = new Circle();
 		
+		cir.Cir();
+		
+		
 	}
 
 }
