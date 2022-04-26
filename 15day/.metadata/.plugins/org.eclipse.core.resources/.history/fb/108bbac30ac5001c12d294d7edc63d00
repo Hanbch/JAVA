@@ -1,0 +1,23 @@
+package com.wxx.circle;
+
+class InstCnt{
+	
+	static int instNum = 0;
+	int instNum2 = 0;
+	
+	public InstCnt() {
+		instNum++;
+		instNum2++;
+		System.out.println(instNum);
+		System.out.println(instNum2);
+	}
+	
+}
+
+public class Circle2{
+	public static void main(String[] args) {
+		InstCnt n1 = new InstCnt();
+		
+	}
+}
+

@@ -1,0 +1,19 @@
+package chap12;
+
+public class String01 {
+
+	public static void main(String[] args) {
+		String str1 = new String("Simple String");
+		String str2 = new String("Simple String");
+		String str3 = "The Best String";
+		String str4 = "The Best String";
+		
+		if(str1 == str2) {
+			System.out.println("동일 인스턴스 참조");
+		}else {
+			System.out.println("다른 인스턴스 참조");
+		}
+		
+	}
+
+}
