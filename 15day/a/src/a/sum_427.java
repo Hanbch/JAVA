@@ -1,5 +1,5 @@
 
-public class sum_0426 {
+public class sum_427 {
 
 	public static void main(String[] args) {
 		
