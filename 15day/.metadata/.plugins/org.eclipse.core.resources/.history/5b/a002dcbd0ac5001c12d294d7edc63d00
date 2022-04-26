@@ -1,7 +1,0 @@
-package com.wxx.circle;
-
-public class Circle2{
-	public Circle2(){
-		System.out.println("A»ç Circle");
-	}
-}

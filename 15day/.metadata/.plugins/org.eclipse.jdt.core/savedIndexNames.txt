@@ -1,4 +1,0 @@
-INDEX VERSION 1.131+C:\HB\15day\.metadata\.plugins\org.eclipse.jdt.core
-2279257025.index
-1145505383.index
-1865797976.index

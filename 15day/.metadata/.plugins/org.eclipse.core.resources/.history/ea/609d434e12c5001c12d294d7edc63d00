@@ -1,7 +1,0 @@
-package chap12;
-
-public class Car{
-	public Car(){
-		System.out.println("B»ç Circle");
-	}
-}
