@@ -1,0 +1,21 @@
+package chap10;
+
+
+public class Example {
+	
+	public static void printString(String str) {
+		System.out.println(str);
+	}
+	
+	public static void main(String[] args) {
+		String str1 = "Happy";
+		String str2 = "Birthday";
+		System.out.print(str1 + " " + str2);
+		
+		printString(str1);
+		printString(" ");
+		printString(str2);
+		printString("\n");
+	}
+
+}

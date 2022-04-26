@@ -1,0 +1,10 @@
+package packag.copy;
+
+
+public class Circle {
+		
+	public void Circle() {
+		System.out.println("B사 입니다.");
+	}
+
+}

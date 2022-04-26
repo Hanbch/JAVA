@@ -1,0 +1,11 @@
+package packag;
+
+
+public class Circle {
+		
+	public void Circle() {
+		System.out.println("A사 입니다.");
+		System.out.println("A사 입니다.");
+	}
+
+}
