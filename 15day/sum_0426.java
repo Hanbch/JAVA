@@ -4,28 +4,28 @@ public class sum_0426 {
 	public static void main(String[] args) {
 		
 		/*
-		 1.¸Þ¼Òµå ¿À¹ö·ÎµùÀÌ¶õ?
-		   - ¸Þ¼­µå ¿À¹ö·ÎµùÀÌ¶õ °°ÀºÀÌ¸§ÀÇ ¸Þ¼­µå¸¦ »ý¼ºÇÒ¶§ ¹Þ´Â ÆÄ¶ó¹ÌÅÍÀÇ Å¸ÀÔÀÌ ´Ù¸£°Å³ª °¹¼ö°¡
-		     ´Ù¸£¸é ÀÌ¸§ÀÌ °°Àº ¸Þ¼­µå¸¦ »ý¼ºÇÒ¼ö ÀÖ´Ù.
+		 1.ë©”ì†Œë“œ ì˜¤ë²„ë¡œë”©ì´ëž€?
+		   - ë©”ì„œë“œ ì˜¤ë²„ë¡œë”©ì´ëž€ ê°™ì€ì´ë¦„ì˜ ë©”ì„œë“œë¥¼ ìƒì„±í• ë•Œ ë°›ëŠ” íŒŒë¼ë¯¸í„°ì˜ íƒ€ìž…ì´ ë‹¤ë¥´ê±°ë‚˜ ê°¯ìˆ˜ê°€
+		     ë‹¤ë¥´ë©´ ì´ë¦„ì´ ê°™ì€ ë©”ì„œë“œë¥¼ ìƒì„±í• ìˆ˜ ìžˆë‹¤.
  		 
-		 2.¸Þ¼Òµå ¿À¹ö·ÎµùÀ» Àû¿ëÇÑ ´ëÇ¥ÀûÀÎ ÇÔ¼ö´Â?
-		   - println() ¸Þ¼­µå°¡ ´ëÇ¥ÀûÀÌ´Ù.
+		 2.ë©”ì†Œë“œ ì˜¤ë²„ë¡œë”©ì„ ì ìš©í•œ ëŒ€í‘œì ì¸ í•¨ìˆ˜ëŠ”?
+		   - println() ë©”ì„œë“œê°€ ëŒ€í‘œì ì´ë‹¤.
 		   
-		 3.this ÇÔ¼ö¿¡ ´ëÇÏ¿© ¼³¸íÇÏ½Ã¿À.
-		   - this(par,par2); ÇüÅÂ·Î »ý¼ºÀÚÇÔ¼ö¸¦ È£Ãâ ÇÒ ¼ö ÀÖ´Ù.
+		 3.this í•¨ìˆ˜ì— ëŒ€í•˜ì—¬ ì„¤ëª…í•˜ì‹œì˜¤.
+		   - this(par,par2); í˜•íƒœë¡œ ìƒì„±ìží•¨ìˆ˜ë¥¼ í˜¸ì¶œ í•  ìˆ˜ ìžˆë‹¤.
 		    
-		 4.this¶õ ¹«¾ùÀÎ°¡?
-		   - this´Â ÀÚ±âÀÚ½ÅÀ» ¶æÇÑ´Ù Áï Çà´ç°´Ã¼¸¦ °¡¸®Å²´Ù.
-		     ¸Å°³º¯¼ö·Î ¼±¾ðµÈ º¯¼öÀÇ ÀÌ¸§ÀÌ ÀÎ½ºÅÏ½º º¯¼ö¿Í °°À» ¶§ 		                 ÀÎ½ºÅÏ½º º¯¼ö¿Í Áö¿ªº¯¼ö¸¦ ±¸ºÐÇÏ±â À§ÇØ¼­ »ç¿ëÇÑ´Ù.
+		 4.thisëž€ ë¬´ì—‡ì¸ê°€?
+		   - thisëŠ” ìžê¸°ìžì‹ ì„ ëœ»í•œë‹¤ ì¦‰ í–‰ë‹¹ê°ì²´ë¥¼ ê°€ë¦¬í‚¨ë‹¤.
+		     ë§¤ê°œë³€ìˆ˜ë¡œ ì„ ì–¸ëœ ë³€ìˆ˜ì˜ ì´ë¦„ì´ ì¸ìŠ¤í„´ìŠ¤ ë³€ìˆ˜ì™€ ê°™ì„ ë•Œ 		                 ì¸ìŠ¤í„´ìŠ¤ ë³€ìˆ˜ì™€ ì§€ì—­ë³€ìˆ˜ë¥¼ êµ¬ë¶„í•˜ê¸° ìœ„í•´ì„œ ì‚¬ìš©í•œë‹¤.
 		   
-	     5.½ºÆ®¸µ °´Ã¼¸¦ »ý¼ºÇÏ´Â 2°¡Áö ¹æ¹ýÀº?
+	     5.ìŠ¤íŠ¸ë§ ê°ì²´ë¥¼ ìƒì„±í•˜ëŠ” 2ê°€ì§€ ë°©ë²•ì€?
 	       - String str = "abcdefg";
 	       - String str1 = new String("abcdefg");
 	       
-		 6.immutable ¿¡ ´ëÇÏ¿© ¼³¸íÇÏ½Ã¿À.
-		   - °´Ã¼ÀÇ ¿øÇüÀÌ º¸ÀüµÇ´Â °ÍÀ» immutableÀÌ¶ó ÇÑ´Ù.
+		 6.immutable ì— ëŒ€í•˜ì—¬ ì„¤ëª…í•˜ì‹œì˜¤.
+		   - ê°ì²´ì˜ ì›í˜•ì´ ë³´ì „ë˜ëŠ” ê²ƒì„ immutableì´ë¼ í•œë‹¤.
 		 */   
-		 //7. ¹®ÀÚ¿­(¿µ¹®À¸·Î)¿¡¼­ ÀÚÀ½°ú ¸ðÀ½ °³¼ö¸¦ °è»êÇÏ´Â ÇÁ·Î±×·¥À» ÀÛ¼ºÇÏ¶ó.
+		 //7. ë¬¸ìžì—´(ì˜ë¬¸ìœ¼ë¡œ)ì—ì„œ ìžìŒê³¼ ëª¨ìŒ ê°œìˆ˜ë¥¼ ê³„ì‚°í•˜ëŠ” í”„ë¡œê·¸ëž¨ì„ ìž‘ì„±í•˜ë¼.
 		 String str1 = "Let's count String's length";
 		 
 		 
@@ -33,16 +33,16 @@ public class sum_0426 {
 		 
 		 System.out.println("------------------------------------");
 		 
-		 //8.¾Æ·¡ÀÇ Å¬·¡½º¸¦ ±¸ÇöÇÏ½Ã¿À.
-		 Employee employee = new Employee("È«±æµ¿", 19, "¼­¿ï ´º¿å½Ã", "°³¹ß 1ÆÀ");
+		 //8.ì•„ëž˜ì˜ í´ëž˜ìŠ¤ë¥¼ êµ¬í˜„í•˜ì‹œì˜¤.
+		 Employee employee = new Employee("í™ê¸¸ë™", 19, "ì„œìš¸ ë‰´ìš•ì‹œ", "ê°œë°œ 1íŒ€");
 		 employee.printInfo();
 		 
 			
-		 //Ãâ·Â:
-		 //ÀÌ¸§ : È«±æµ¿
-		 //³ªÀÌ : 19
-		 //ÁÖ¼Ò : ¼­¿ï ´º¿å½Ã
-		 //ºÎ¼­ : °³¹ß 1ÆÀ
+		 //ì¶œë ¥:
+		 //ì´ë¦„ : í™ê¸¸ë™
+		 //ë‚˜ì´ : 19
+		 //ì£¼ì†Œ : ì„œìš¸ ë‰´ìš•ì‹œ
+		 //ë¶€ì„œ : ê°œë°œ 1íŒ€
 		 
 		
 	}
@@ -54,12 +54,14 @@ public class sum_0426 {
 			char alp = str.charAt(i);
 			 if( alp == 'a' || alp == 'e' || alp == 'i' || alp == 'o' || alp == 'u' ) {
 				 mo_count++;
+			 }else if(alp == ' '){
+			 
 			 }else {
 				 ja_count++;
 			 }
 			
 		}
-		System.out.println("ÀÚÀ½Àº: "+ja_count+'\n'+"¸ðÀ½Àº: "+mo_count);
+		System.out.println("ìžìŒì€: "+ja_count+'\n'+"ëª¨ìŒì€: "+mo_count);
 	}
 
 }
@@ -79,7 +81,7 @@ class Employee {
 	}
 	
 	public void printInfo() {
-		System.out.println("ÀÌ¸§: " + name + '\n' + "³ªÀÌ: " + age + "\n" + "Áö¿ª: " + city+ "\n"  + "ÆÀ¸í: " + team);
+		System.out.println("ì´ë¦„: " + name + '\n' + "ë‚˜ì´: " + age + "\n" + "ì§€ì—­: " + city+ "\n"  + "íŒ€ëª…: " + team);
 	}
 	
 }
