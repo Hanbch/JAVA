@@ -11,6 +11,10 @@ class Rectang{
 		this.width = width;
 		this.height = height;
 	}
+	Rectang(int[] arr){
+		this.width = arr[0];
+		this.height = arr[1];
+	}
 	
 	int getRecArea(){
 		return width*height;
@@ -18,7 +22,7 @@ class Rectang{
 	
 }
 
-public class Exe2 {
+public class Exe02 {
 	
 	static int sumAllArea(Rectang[] rec) {
 		int sumAll = 0;
