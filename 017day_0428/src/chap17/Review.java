@@ -13,23 +13,6 @@ class Circle{
 		Scanner sc = new Scanner(System.in);
 		String yn = "Y";
 		
-//		for(;;) {
-//			if(yn.equals("Y") || yn.equals("y")) {
-//				System.out.println("반지름을 입력해주세요.");
-//				int rad = sc.nextInt();
-//				System.out.println("반지름: " + rad);
-//				System.out.println("넓이는: " + Circle.getCirArea02(rad));
-//				System.out.println("계속 Y :: 중단 N");
-//				yn = sc.next();
-//			}else if( yn.equals("N") || yn.equals("n")){
-//				System.out.println("프로그램이 종료되었습니다.");
-//				return;
-//			}else {
-//				System.out.println("잘못된 값을 입력했습니다. Y(yes) 와 N(no) 중 하나를 입력하시오. " );
-//				yn = sc.next();
-//			}
-//		}
-		
 		for(;;) {
 			if(yn.equals("Y") || yn.equals("y")) {
 				System.out.println("반지름을 입력해주세요.");
