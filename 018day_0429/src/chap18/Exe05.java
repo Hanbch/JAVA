@@ -43,29 +43,29 @@ public class Exe05 {
 			int scoreNum = 0;
 	
 			for(;;) {
-				boolean check = false;
-			
-				for(int i =0; i<course.length; i++) {
+					boolean check = false;
 				
-					if(courseName.equals(course[i])) {
-						scoreNum = score[i];
-						check = true;
+					for(int i =0; i<course.length; i++) {
+					
+						if(courseName.equals(course[i])) {
+							scoreNum = score[i];
+							check = true;
+						}
 					}
-				}
-				
-				if(check) {
-					System.out.println("과목이름: " + courseName);
-					System.out.println(courseName + "의 점수는 " + scoreNum);
-					System.out.println("과목 이름 입력: ");
-					courseName = sc.next();
-				}else {
-					System.out.println("다시입력");
-					courseName = sc.next();
-				}
-				
-				if(courseName.equals("그만")) {
-					return;
-				}
+					
+					if(check) {
+						System.out.println("과목이름: " + courseName);
+						System.out.println(courseName + "의 점수는 " + scoreNum);
+						System.out.println("과목 이름 입력: ");
+						courseName = sc.next();
+					}else {
+						System.out.println("다시입력");
+						courseName = sc.next();
+					}
+					
+					if(courseName.equals("그만")) {
+						return;
+					}
 			}
 			
 			
