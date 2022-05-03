@@ -61,7 +61,7 @@ import javax.swing.plaf.SliderUI;
 //	private String department;
 //	protected int salary;
 //	
-//	Employee(String name, int age, String adress, String department){
+//	Employee(String name, int age, String adress, String department){ //생성자
 //		this.name = name;
 //		this.age = age;
 //		this.adress = adress;
@@ -69,7 +69,7 @@ import javax.swing.plaf.SliderUI;
 //		this.salary = salary;
 //	}
 //	
-//	void printInfo() {
+//	void printInfo() { //메서드
 //		System.out.println(name);
 //		System.out.println(age);
 //		System.out.println(adress);
@@ -80,8 +80,8 @@ import javax.swing.plaf.SliderUI;
 
 //class Regular extends Employee{
 //	
-//	Regular(String name, int age, String adress, String department){
-//		super(name, age, adress, department);
+//	Regular(String name, int age, String adress, String department){ // 생성자
+//		super(name, age, adress, department); //부모클래스에서 호출
 //	}
 //	
 // 	public void setSalary(int salary){

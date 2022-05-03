@@ -17,6 +17,10 @@ class Cake {
 		   public void yummy() {
 			   System.out.println("Yummy StrawberryCheese Cake");
 		   }    // 그리고 CheeseCake의 yummy를 오버라이딩
+		   
+		   public void Test() {
+			   System.out.println("test");
+		   }
 		}
 
 
@@ -42,6 +46,9 @@ public class OverRiding {
 		c4.yummy(); 
 		c5.yummy(); 
 		c6.yummy(); 
+		
+		//c1.Test(); 에러남
+		c6.Test();
 
 
 	}
