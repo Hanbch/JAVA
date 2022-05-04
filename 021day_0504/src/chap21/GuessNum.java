@@ -43,7 +43,7 @@ class UpDown{
 	
 }
 
-public class Exe01 {
+public class GuessNum {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
