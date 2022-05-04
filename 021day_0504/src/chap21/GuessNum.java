@@ -23,6 +23,7 @@ class UpDown{
 			if(userNum >= 1 && userNum <= 100) {
 				if( targetNum == userNum ) {
 					System.out.println("일치");
+					System.out.println("-------------------------");
 					check = false;
 				}else if( targetNum > userNum ) {
 					System.out.println("UP" + "=====>" + (10-count++) + "번 남았습니다.");
@@ -35,6 +36,7 @@ class UpDown{
 				if(count == 10) {
 					System.out.println("Game Over");
 					System.out.println("정답은: "+ targetNum);
+					System.out.println("-------------------------");
 					return;
 				}
 			}else {
