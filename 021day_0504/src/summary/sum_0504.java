@@ -3,7 +3,7 @@
 /*
 1. instanceof  연산자에 대하여 설명하시오.
   - instanceof연산자는 객체가 class를 갖고있는지 확인하는 연산자이다
-    ex) a instanceof Car 이것은 a라는 객체가 Car라는 객체를 가지고 있으면 true 반환 아니면 false
+    ex) a instanceof Car 이것은 a라는 객체가 Car라는 클래스를 가지고 있으면 true 반환 아니면 false
 
 2. Object 클래스에 대하여 설명하시오.
   - Object는 최상위의 부모클래스이다 상속을 정의해주지 않으면 extends Object가 디폴트값이다.
