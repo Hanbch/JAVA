@@ -1,4 +1,4 @@
-package workspace;
+package HS_Training;
 
 import java.util.Scanner;
 
@@ -31,7 +31,7 @@ class UpDown {
 					check = false;
 				}
 			}else {
-				System.out.print("1~100사이의 정수를 입력하시오");
+				System.out.print("1~100사이의 ");
 				count--;
 			}
 			
@@ -41,7 +41,7 @@ class UpDown {
 
 }
 
-public class GuessNum2 {
+public class HS_061 {
 
 	public static void main(String[] args) {
 		
