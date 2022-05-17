@@ -11,6 +11,11 @@ class Orange {
 
 class Box<T>{
 	private T ob;
+	int num;
+	
+	Box(int num){
+		this.num = num;
+	}
 	
 	public void set(T o) {
 		ob = o;
@@ -25,8 +30,8 @@ public class Generic {
 
 	public static void main(String[] args) {
 		
-		Box<Apple> aBox = new Box<Apple>();
-		Box<Orange> oBox = new Box<Orange>();
+		Box<Apple> aBox = new Box<Apple>(25);
+		Box<Orange> oBox = new Box<Orange>(25);
 		
 		aBox.set(new Apple());
 		oBox.set(new Orange());
