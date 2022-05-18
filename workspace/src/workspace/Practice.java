@@ -1,16 +1,20 @@
 package workspace;
 
-class Mypoint{
-	int x,y;
+import java.util.HashSet;
+
+class Person00{
+	private String name;
+	private String pNum;
 	
-	Mypoint(int x, int y){
-		this.x =x; 
-		this.y =y;
+	Person00(String name, String pNum){
+		this.name = name;
+		this.pNum = pNum; 
 	}
 	
+	
 	@Override
-	public boolean equals(Object obj){
-		if( this.x == ((Mypoint)obj).x && this.y == ((Mypoint)obj).y )
+	public boolean equals(Object obj) {
+		if( name.equals(((Person00)obj).name) && pNum.equals( ((Person00)obj).pNum) )
 			return true;
 		else
 			return false;
@@ -18,7 +22,7 @@ class Mypoint{
 	
 	@Override
 	public String toString() {
-		return "Point(" + x + "," +y + ")";
+		return this.name + "(" + this.pNum + ")";
 	}
 	
 }
@@ -27,21 +31,20 @@ public class Practice{
 	
 	public static void main(String[] args) {
 		 
-		
-        Mypoint p = new Mypoint(3, 50);
-        Mypoint q = new Mypoint(4, 50);
+		HashSet<Person00> hSet = new HashSet<Person00>();
+		hSet.add(new Person00("LEE", "010-222"));
+		hSet.add(new Person00("LEE", "010-222"));
+		hSet.add(new Person00("PARK", "010-333"));
+		hSet.add(new Person00("PARK", "010-333"));
 
-        System.out.println(p);
-
-        if(p.equals(q)) System.out.println("같은 점");
-        else System.out.println("다른 점");                        
-		
+		System.out.println("저장된 데이터 수: " + hSet.size());
+		System.out.println(hSet);
 
 		/*
-		Point(3,50)
-		다른점
+		============
+		저장된 데이터 수: 2
+		[LEE(010-222), PARK(010-333)]
 		*/
-		
 	}
 	
 }

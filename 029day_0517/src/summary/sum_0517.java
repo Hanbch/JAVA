@@ -1,8 +1,10 @@
 package summary;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Scanner;
+import java.util.Set;
 
 //05/17
 /*
@@ -39,36 +41,56 @@ ArrayList를 검색하여 학점을 점수(A=4.0, B=3.0, C=2.0, D=1.0, F=0)로 �
 
  */
 
-
-
 public class sum_0517 {
 	public static void main(String[] args) {
 
-		//6번
+		//4번
+//		Set<Integer> ln = new HashSet<>();
+//		int num;
+//		for(int i=0; i<6; i++) {
+//			num = (int)(Math.random()*45)+1;
+//			ln.add(num);
+//		}
+//		
+//		
+//			System.out.println(ln);
+//		
+		
+		
+		
+		// 5번
 		Scanner sc = new Scanner(System.in);
 		List<Integer> numBox = new ArrayList<>();
 		int maxNum = 0;
-		
-		while(true) {
-			System.out.println("양의 정수입력");
-			int num = sc.nextInt();
-		
-			if(num == -1)
-				break;
-			else 
-				numBox.add(num);
+
+//		while (true) {
+//			System.out.println("양의 정수입력");
+//			int num = sc.nextInt();
+//
+//			if (num == -1)
+//				break;
+//			else
+//				numBox.add(num);
+//		}
+//
+//		for (int i = 0; i < numBox.size(); i++) {
+//			for (int j = 0; j < i; j++) {
+//				if ((numBox.get(i)) > (numBox.get(j))) {
+//					maxNum = i;
+//				} else {
+//					maxNum = j;
+//				}
+//			}
+//		}
+//		System.out.println(numBox.get(maxNum));
+
+		// 6번
+		List score = new ArrayList();
+		for (int i = 0; i < 6; i++) {
+			System.out.println("학점을 입력하시오");
+			String ms = sc.next();
+			score.add(ms);
 		}
-		
-		for(int i=0; i<numBox.size(); i++) {
-			for(int j=0; j<i; j++) {
-				if( (numBox.get(i)) > (numBox.get(j))) {
-					maxNum = i;
-				}else {
-					maxNum = j;
-				}
-			}
-		}
-		System.out.println(numBox.get(maxNum));
-		
+
 	}
 }

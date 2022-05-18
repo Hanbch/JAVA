@@ -1,32 +1,23 @@
 package HS_Training;
-/* 81.
- 아래가 컴파일 되도록 프로그램을 짜시오.(중요)
-public static void main(String[] args) {
-   Box003<Integer> iBox003 = new Box003<>(); 
-   iBox003.set(24);
 
-   Box003<Double> dBox003 = new Box003<>(); 
-   dBox003.set(5.97); 
- 
-}"
+import java.util.HashSet;
+import java.util.Set;
+
+/* 81.
+로또 프로그램을 작성하시오.(Set 으로)
 */
-class Box003<T extends Number>{
-	T ob;
-	
-	public void set(T ob) {
-		this.ob = ob;
-	}
-	
-	
-}
+
+
 public class HS_081 {
 
 	public static void main(String[] args) {
-		Box003<Integer> iBox003 = new Box003<>();
-		iBox003.set(24);
-
-		Box003<Double> dBox003 = new Box003<>();
-		dBox003.set(5.97);
+		Set<Integer> Ln = new HashSet<>();
+		
+		while(Ln.size() < 6) {
+			Ln.add((int)(Math.random()*45)+1);
+		}
+		
+		System.out.println(Ln);
 	}
 
 }
