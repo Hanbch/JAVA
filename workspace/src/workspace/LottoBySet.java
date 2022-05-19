@@ -2,28 +2,9 @@ package workspace;
 
 import java.util.HashSet;
 
-public class Practice{
-	
-	public static void main(String[] args) {
-		 
-		HashSet<Integer> hSet = new HashSet<Integer>();
-		hSet.add(500);
-		hSet.add(100);
-		hSet.add(300);
-		hSet.add(200);
-		
-		for(int n: hSet)
-			System.out.println(n);
-		
-		System.out.println("저장된 데이터 수: " + hSet.size());
-		System.out.println(hSet);
+public class LottoBySet {
 
-		/*
-		============
-		저장된 데이터 수: 2
-		[LEE(010-222), PARK(010-333)]
-		 */
-		
+	public static void main(String[] args) {
 		HashSet<Integer> numBox = new HashSet<>(); //숫자 크기 순자적으로 출력하기위해  TreeSet사용
 		final int COUNT = 6;
 		
@@ -42,5 +23,5 @@ public class Practice{
 		System.out.println(numBox);
 
 	}
-	
+
 }
