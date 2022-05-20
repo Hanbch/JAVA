@@ -14,10 +14,10 @@ public class Practice2{
 		System.out.println("나라명과 인구수 입력");
 		for(int i=0; i<COUNT; i++) {
 			System.out.print("나라명 인구수>>  ");
-			String country = sc.next();
+			String name = sc.next();
 			int pop = sc.nextInt();
 			
-			nations.put(country, pop);
+			nations.put(name, pop);
 		}
 		
 		Set<String> key = nations.keySet();
