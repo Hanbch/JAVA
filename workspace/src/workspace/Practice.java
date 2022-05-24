@@ -1,46 +1,49 @@
 package workspace;
 
-import java.util.HashSet;
+import java.io.*;
+import java.util.*;
 
+class Apple{
+	@Override
+	public String toString() {
+		return "This is Apple";
+	}
+}
+
+class Peach{
+	@Override
+	public String toString() {
+		return "This is Peach";
+	}
+}
+
+class Fruit<T>{
+	T ob;
+	
+	void set(T ob) {
+		this.ob = ob;
+	}
+	
+	T get() {
+		return this.ob;
+	}
+	
+	@Override
+	public String toString() {
+		return this.ob + "";
+	}
+	
+}
 public class Practice{
 	
 	public static void main(String[] args) {
-		 
-		HashSet<Integer> hSet = new HashSet<Integer>();
-		hSet.add(500);
-		hSet.add(100);
-		hSet.add(300);
-		hSet.add(200);
+		Fruit<Apple> f1 = new Fruit<>();
+		Fruit<Peach> f2 = new Fruit<>();
 		
-		for(int n: hSet)
-			System.out.println(n);
-		
-		System.out.println("저장된 데이터 수: " + hSet.size());
-		System.out.println(hSet);
-
-		/*
-		============
-		저장된 데이터 수: 2
-		[LEE(010-222), PARK(010-333)]
-		 */
-		
-		HashSet<Integer> numBox = new HashSet<>(); //숫자 크기 순자적으로 출력하기위해  TreeSet사용
-		final int COUNT = 6;
-		
-		//while(numBox.size() < COUNT) { //while문을 이용해 6개의 숫자를 받을때까지 반복
-		//	int rn = (int)(Math.random()*45)+1;
-		//	numBox.add(rn);
-		//}
-		
-		numBox.add(32);
-		numBox.add(2);
-		numBox.add(6);
-		numBox.add(23);
-		numBox.add(44);
-		numBox.add(28);
-		
-		System.out.println(numBox);
-
+		f1.set(new Apple());
+		f2.set(new Peach());
+		System.out.println(f1);
+		System.out.println(f2);
 	}
-	
+
 }

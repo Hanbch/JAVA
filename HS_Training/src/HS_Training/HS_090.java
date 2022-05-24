@@ -11,34 +11,62 @@ import java.util.HashMap;
 import java.util.Scanner;
 import java.util.Set;
 
-/* 89.
-"아래의 프로그래밍을 작성하시오.
-
-이미지 파일 a.jpg를 b.jpg로 복사하는 프로그램을 작성하라. 
-한 번에 1KB 단위로 데이터를 복사하라. a.jpg는 프로젝트 폴더 밑에 있어야 한다."
+/* 90.
+" + 와 - 를 300 개씩 쓰레드로 돌리시오.
 */
+
+class ThreadEx01 extends Thread{
+	@Override
+	public void run() {
+		for(int i=0; i<300; i++) {
+			System.out.print("+");
+		}
+	}
+}
+
+class ThreadEx02 extends Thread{
+	@Override
+	public void run() {
+		for(int i=0; i<300; i++) {
+			System.out.print("-");
+		}
+	}
+}
+
+class RunableEx01 implements Runnable{
+	@Override
+	public void run(){
+		for(int i=0; i<300; i++) {
+			System.out.print("-");
+		}
+	}
+}
+
+class RunableEx02 implements Runnable{
+	@Override
+	public void run(){
+		for(int i=0; i<300; i++) {
+			System.out.print("+");
+		}
+	}
+}
 
 public class HS_090 {
 
-	public static void main(String[] args) throws IOException {
-		InputStream in = new FileInputStream("C:\\HB/test.txt");
-		OutputStream out = new FileOutputStream("C:\\HB/testcopy.txt");
+	public static void main(String[] args) {
+		//Thread 클래스를 상속받는 방법
+		ThreadEx01 th1 = new ThreadEx01();
+		ThreadEx02 th2 = new ThreadEx02();
 		
-		//BufferedInputStream bin = new BufferedOutputStream();
-	
-		int c;
+		th1.start();
+		th2.start();
 		
-		while( (c = in.read()) != -1 ) {
-			out.write(c);
-		}
+		//Thread 인터페이스를 상속받는 방법
+		RunableEx01 th3 = new RunableEx01();
+		RunableEx02 th4 = new RunableEx02();
+		new Thread(th3).start();
+		new Thread(th4).start();
 		
-		in.close();
-		out.close();
-		
-		//System.out.println("복사된 파일크기" + copyByte);
-
-
-
 	}
 
 }

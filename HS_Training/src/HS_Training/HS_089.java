@@ -20,19 +20,17 @@ public class HS_089 {
 
 	public static void main(String[] args) throws IOException {
 		InputStream in = new FileInputStream("C:\\HB/bg.png");
-		OutputStream out = new FileOutputStream("C:\\HB/aaa.png");
+		OutputStream out = new FileOutputStream("C:\\Hb/bgcc.png");
 		
-	
-		int c;
+		byte[] bData = new byte[1024];
+		int readLen;
 		
-		while( (c = in.read()) != -1 ) {
-			out.write(c);
+		while( (readLen=in.read(bData)) != -1  ) {
+			out.write(bData,0,readLen);
 		}
-		
 		in.close();
 		out.close();
 		
-		//System.out.println("복사된 파일크기" + copyByte);
 
 
 
