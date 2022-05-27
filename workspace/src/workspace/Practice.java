@@ -1,49 +1,33 @@
 package workspace;
 
 import java.io.*;
+
 import java.util.*;
 
-class Apple{
-	@Override
-	public String toString() {
-		return "This is Apple";
-	}
-}
+/*
+ "3. Sokcet 객체를 할용하여 아래를 프로그래밍 하시오.
 
-class Peach{
-	@Override
-	public String toString() {
-		return "This is Peach";
-	}
-}
+- www.daum.net  접속
+- 아래의 문구를 서버로 접속
+GET / HTTP/1.1
+Host: www.daum.net
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_0)""
++ "" AppleWebKit/537.36 (KHTML, like Gecko)"" + "" Chrome/30.0.1599.101 Safari/537.36"");
+한줄 공백
 
-class Fruit<T>{
-	T ob;
-	
-	void set(T ob) {
-		this.ob = ob;
-	}
-	
-	T get() {
-		return this.ob;
-	}
-	
-	@Override
-	public String toString() {
-		return this.ob + "";
-	}
-	
-}
+- 서버에서 받아온 헤더및 html 출력 "
+ * */
+
 public class Practice{
 	
-	public static void main(String[] args) {
-		Fruit<Apple> f1 = new Fruit<>();
-		Fruit<Peach> f2 = new Fruit<>();
+	public static void main(String[] args) throws IOException{
+		int i;
+		int group = (int)(Math.random()*5+1);
+		System.out.print(group + "조 ");
+		for( i=0; i<6; i++) {
+			int num = (int)(Math.random()*9);
+			System.out.print(num + " ");
+		}
 		
-		f1.set(new Apple());
-		f2.set(new Peach());
-		System.out.println(f1);
-		System.out.println(f2);
 	}
-
 }
