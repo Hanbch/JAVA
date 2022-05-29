@@ -11,6 +11,8 @@ import java.util.TreeSet;
 //05/27
 /*
 1.get 방식과 post 방식에 대하여 설명하시오. (필수!) 
+	- get과 post의 차이는
+
 2. 컨텍스트 패스(Context Path)란 무엇인가?
 3. WAS 와 Web Server 의 차이는?
 4. 구구단을 jsp 로 짜시오.
