@@ -16,6 +16,15 @@
 		}
 	
 	%>
+	
+	
+	<%out.println(i);%>
+	<%= i%>
+	<br>
+	<%out.println(sum(1,2));%>
+	<%= sum(1,2)%>
+	
+	<br>
 	<%
 		int i = 0;
 		while(true){

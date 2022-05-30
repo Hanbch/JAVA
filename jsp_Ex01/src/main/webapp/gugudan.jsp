@@ -13,52 +13,19 @@
 	
 	<table>
 		<tr>
-			<%
-				for(int i =2; i<10; i++){
-					
-				
-			%>
-			<td> <% out.print(i + "단"); %> </td>
-		
+			<%for(int i=2; i<=9;i++){%>
+					<th><% out.print(i + "단"); %></th>
 			<% } %>
 		</tr>
 		
-		<% for(int i=2; i<10; i++){
-			for(int j=2; j<10; j++){
-				String a = i +"x" + j + "=" + i*j;
-		%>
-		<tr>
-			<td>1</td>
-			<td><%out.print(a); %></td>
-		</tr>
+		<% for(int i=1; i<=9;i++){%>
+			<tr>
+				<% for(int j=2; j<=9; j++){ %>
+					<td><%out.print(j + "x" + i + "=" + i*j); %></td>
+				<% } %>
+			</tr>
+		<% } %>
 		
-		<tr>
-			<td>2</td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-		</tr>
-		
-		<tr>
-			<td>3</td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-		</tr>
-		<%
-			}
-		}
-		%>
 	</table>
 </body>
 </html>
