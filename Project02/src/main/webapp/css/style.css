@@ -1,0 +1,31 @@
+body{background-color:#eee}
+
+.wrapper_inner{ width:600px;margin:100px auto;padding:20px;border-radius:50px;border:2px solid #000;background-color:#fff;}
+
+/*
+.top{overflow:hidden;padding-bottom:10px;border-bottom:1px solid #333;line-height:50px;}
+.top .score{margin-left:30px;float:left;font-size:25px;font-weight:600;letter-spacing:80px;}
+.top .reset{float:right;margin-right:30px;}
+.top .reset button{padding:0 15px; line-height:30px;font-weight:600;font-size:17px;border-radius:30px;background-color:#fff;}
+.top .reset button img{width:19px; height:19px;padding-right:5px;vertical-align:sub}
+*/
+.show_result{margin:20px 0;overflow:hidden;text-align:center;position:relative}
+.show_result .left{width:50%; float:left;box-sizing:border-box;}
+.show_result .right{width:50%; float:left;box-sizing:border-box;}
+.show_result .vs{font-size:50px;font-weight:600;position:absolute;left:50%;top:57%;transform:translate(-50%,-50%);}
+.show_result .vs.result_page{top:35%}
+.show_result .tit{font-size:17px; margin-bottom:15px;}
+.show_result img{border-radius:50%;}
+.show_result p{font-size:20px; font-weight:600; margin-top:15px;}
+.show_result .result{font-size:50px; font-weight:600;}
+
+.select_zone{overflow:hidden}
+.select_zone form{text-align:center}
+.select_zone input{overflow: hidden;position: absolute;left: -9999px;width: 1px;height: 1px;}
+.select_zone .label_img{width:100px;height:100px;margin:0 10px;display:inline-block;border-radius:50%;overflow:hidden;box-sizing:border-box;}
+.select_zone .label_img.on{border:4px solid #ccc}
+.select_zone .select{width:200px;line-height:50px;display:block;margin:20px auto;border:none;}
+.label_img img{width:100%}
+
+.back{display:block;font-size:20px;text-align:center}
+.back img{width:25px; height:25px;vertical-align:sub}
