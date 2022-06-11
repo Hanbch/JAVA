@@ -19,11 +19,8 @@
 
     <div class="wrapper">
         <div class="wrapper_inner">
-            
             <a href="index.jsp" class="back" style="display:block">돌아가기</a>
-            
         </div>
-
     </div>
 </body>
 </html>

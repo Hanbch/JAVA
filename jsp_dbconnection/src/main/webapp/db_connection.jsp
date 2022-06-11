@@ -1,3 +1,4 @@
+<%@page import="java.sql.SQLException"%>
 <%@page import="java.sql.Date"%>
 <%@page import="java.sql.DriverManager"%>
 <%@page import="java.sql.ResultSet"%>
@@ -47,8 +48,15 @@
 	}catch(Exception e){
 		e.printStackTrace();
 	}finally{
-		
-	}
+	      try{
+	          if(resultSet != null) resultSet.close();         
+	          if(statement != null) statement.close();         
+	          if(con != null) con.close();
+	          
+	       } catch(Exception e){}
+	       
+	    }
+
 	
 %>
 

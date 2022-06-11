@@ -1,3 +1,4 @@
+<%@page import="project2.Rsp"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
  <%@ page errorPage="erroPage.jsp"  %>
@@ -17,46 +18,11 @@
 	String com = rsp[rn];
 	String user = rsp[Integer.parseInt( request.getParameter("rsp") )];
 	
-	class Rsp{
-		String user,com;
-		
-		Rsp(String user,String com){
-			this.user = user;
-			this.com = com;
-		}
-		
-		public String run(){
-			
-			if(user.equals(com))
-				return "DRAW";
-			
-			if(user.equals("rock") && com.equals("scissor")) 
-				return "WIN";
-			else if(user.equals("rock") && com.equals("paper"))
-				return "LOSE";
-			else if(user.equals("scissor") && com.equals("rock"))
-				return "LOSE";
-			else if(user.equals("scissor") && com.equals("paper"))
-				return "WIN";
-			else if(user.equals("paper") && com.equals("rock"))
-				return "WIN";
-			else 
-				return "LOSE";
-			
-		}
-	}
-	
 	Rsp g1 = new Rsp(user,com);
 	String result = g1.run();
 %>
     <div class="wrapper">
         <div class="wrapper_inner">
-            <div class="top">
-                <!--  
-                <div class="score">0:0</div>
-                <div class="reset"><button><img src="img/reset_icon.png" alt="reset_img">Reset</button></div>
-                -->
-            </div>
             <div class="show_result">
                 <div class="left">
                     <div class="tit">You</div>
