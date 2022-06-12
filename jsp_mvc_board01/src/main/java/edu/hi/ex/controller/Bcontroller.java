@@ -16,13 +16,13 @@ import edu.hi.ex.command.BListCommand;
  * Servlet implementation class bcontroller
  */
 @WebServlet("*do")
-public class bcontroller extends HttpServlet {
+public class Bcontroller extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public bcontroller() {
+    public Bcontroller() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -46,14 +46,14 @@ public class bcontroller extends HttpServlet {
 	private void actionDo(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 	      
 	      System.out.println("actionDo");
-	      request.setCharacterEncoding("UTF-8");
+	      request.setCharacterEncoding("UTF-8");//한글 처리
 	      
 	      //BCommand는 MVC패턴 Model2에서 로직실행부분 Command에 속한다. 
-	        //BCommand에 대하여 정의가 필요하여 에러발생
+	      //BCommand에 대하여 정의가 필요하여 에러발생
 	      String viewPage = null;
 	      BCommand command = null;
 	      
-	      //아래 세 줄은 http://localhost:8282/jsp_board/list.do에서 list.do를 꺼내기 위한 코드들.
+	      //아래 세 줄은 http://localhost:8282/jsp_board/list.do에서 "list.do"를 꺼내기 위한 코드들.
 	      String uri = request.getRequestURI();
 	      String conPath = request.getContextPath();
 	      String com = uri.substring(conPath.length());

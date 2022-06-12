@@ -67,7 +67,7 @@ public class EmpDao {
 				if(con != null)
 					con.close();
 			}catch(Exception e2) {
-				
+				e2.printStackTrace();
 			}
 		}
 		
