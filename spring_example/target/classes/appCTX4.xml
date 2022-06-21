@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	
+	<bean id="triangle" class="edu.hi.ex.Triangle">
+		<property name="width">
+			<value>20</value>
+		</property>
+		<property name="height">
+			<value>5</value>
+		</property>
+	</bean>
+	
+	<bean id="square" class="edu.hi.ex.Square">
+		<property name="width" value="20" />
+		<property name="height" value="5" />
+	</bean>
+	
+	<bean id="shapeGetArea" class="edu.hi.ex.ShapeGetArea">
+		<constructor-arg>
+			<ref bean="square" />
+		</constructor-arg>
+	</bean>
+</beans>

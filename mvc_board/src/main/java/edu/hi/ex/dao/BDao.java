@@ -333,49 +333,7 @@ public class BDao {
 
 	}
 	
-	public void modify(String bid,String bname,String btitle,String bcontent) {
-
-	      System.out.println("modify()..");
-
-	      Connection connection = null;
-	      PreparedStatement stmt = null;
-
-	      try {
-
-	   
-
-	         String query = "update mvc_board set bname = ?, btitle = ?, bcontent = ? " +
-	         " where bid = ?";
-
-	         connection = dataSource.getConnection();
-	         stmt = connection.prepareStatement(query);
-
-	         stmt.setString(1, bname);
-	         stmt.setString(2, btitle);
-	         stmt.setString(3, bcontent);
-	         stmt.setInt(4, Integer.parseInt(bid));
-	         
-
-	         int rn = stmt.executeUpdate();
-
-	         System.out.println("업데이트 갯수 :" + rn);
-
-	      } catch (Exception e) {
-	         e.printStackTrace();
-	      } finally {
-
-	         try {
-	            if (stmt != null)
-	               stmt.close();
-	            if (connection != null)
-	               connection.close();
-
-	         } catch (Exception e) {
-	            e.printStackTrace();
-	         }
-	      }
-
-	   }
+	
 	
 
 	public void write(String bname, String btitle, String bcontent) {
@@ -424,6 +382,30 @@ public class BDao {
 
 	}
 	
+	public int update(int bid,String btitle, String bcontent) {
+		
+		System.out.println("write()");
+
+		Connection connection = null;
+		PreparedStatement stmt = null;
+		
+		
+		try {
+			String query = "update mvc_board set btitle =?, bcontent=? where bid = ?";
+			
+			connection = dataSource.getConnection();
+			stmt = connection.prepareStatement(query);
+
+			stmt.setString(1, btitle);
+			stmt.setString(2, bcontent);
+			stmt.setInt(3, bid);
+		}	catch (Exception e) {
+				e.printStackTrace();
+		}
+		return -1;
+		
+	}
+	
 	public void uphit(String bid) {
 
 		System.out.println("uphit()");
@@ -466,5 +448,49 @@ public class BDao {
 		}
 
 	}
+	
+	public void modify(String bid,String bname,String btitle,String bcontent) {
+
+	      System.out.println("modify()..");
+
+	      Connection connection = null;
+	      PreparedStatement stmt = null;
+
+	      try {
+
+	   
+
+	         String query = "update mvc_board set bname = ?, btitle = ?, bcontent = ? " +
+	         " where bid = ?";
+
+	         connection = dataSource.getConnection();
+	         stmt = connection.prepareStatement(query);
+
+	         stmt.setString(1, bname);
+	         stmt.setString(2, btitle);
+	         stmt.setString(3, bcontent);
+	         stmt.setInt(4, Integer.parseInt(bid));
+	         
+
+	         int rn = stmt.executeUpdate();
+
+	         System.out.println("업데이트 갯수 :" + rn);
+
+	      } catch (Exception e) {
+	         e.printStackTrace();
+	      } finally {
+
+	         try {
+	            if (stmt != null)
+	               stmt.close();
+	            if (connection != null)
+	               connection.close();
+
+	         } catch (Exception e) {
+	            e.printStackTrace();
+	         }
+	      }
+
+	   }
 
 }

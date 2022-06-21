@@ -23,6 +23,11 @@ class Num{
 		else
 			return false;
 	}
+	
+	@Override 
+	public String toString() {
+		return this.num + "";
+	}
 }
 
 public class HashCode {
