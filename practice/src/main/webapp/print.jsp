@@ -11,7 +11,7 @@
 </head>
 <body>
 <%
-	empDao dao = new empDao();
+	empDao dao = new empDao(); 
 
 	ArrayList<empDto> dtos = dao.empSelect();
 	
