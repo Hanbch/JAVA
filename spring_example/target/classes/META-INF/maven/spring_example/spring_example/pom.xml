@@ -3,7 +3,7 @@
   <groupId>spring_example</groupId>
   <artifactId>spring_example</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  
+  <!-- s.추가 -->
    <properties>
          <!-- Spring -->
     	<spring-framework.version>3.2.3.RELEASE</spring-framework.version>
@@ -22,5 +22,5 @@
 			<version>${spring-framework.version}</version>
 		</dependency>
 	</dependencies>
-  
+  	<!-- e.추가-->
 </project>

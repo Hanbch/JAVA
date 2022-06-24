@@ -1,10 +1,10 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>spring_example</groupId>
-  <artifactId>spring_example</artifactId>
+  <groupId>spring_example02</groupId>
+  <artifactId>spring_example02</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <!-- s.추가 -->
-   <properties>
+  
+  <properties>
          <!-- Spring -->
     	<spring-framework.version>3.2.3.RELEASE</spring-framework.version>
   	</properties>
@@ -22,5 +22,5 @@
 			<version>${spring-framework.version}</version>
 		</dependency>
 	</dependencies>
-  	<!-- e.추가-->
+  
 </project>

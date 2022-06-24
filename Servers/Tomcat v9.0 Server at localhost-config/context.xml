@@ -27,6 +27,7 @@
     <Manager pathname="" />
     -->
     
+    <!-- 커넥션 풀 -->
     <Resource 
       auth="Container" 
       driverClassName="oracle.jdbc.OracleDriver" 

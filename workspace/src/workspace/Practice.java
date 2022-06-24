@@ -13,7 +13,7 @@ public class Practice{
 		int group = (int)(Math.random()*5+1);
 		System.out.print(group + "Á¶ ");
 		for( i=0; i<6; i++) {
-			int num = (int)(Math.random()*9);
+			int num = (int)(Math.random()*28+1);
 			System.out.print(num + " ");
 		}
 		
